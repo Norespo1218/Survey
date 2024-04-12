@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title>Pearlyshells Quiz - End</title>
+<link rel="icon" type="image/x-icon" href="Untitled_design-removebg-preview.png">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hello {
+            background: white;
+            width: 100%;
+            max-width: 900px;
+            margin: 100px auto 0;
+            border-radius: 30px;
+            padding: 30px;
+box-shadow: 0px 0px 15px 0px grey;
+        }
+
+        .hello #p {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .loe {
+            padding: 20px 0;
+        }
+
+        .loe p {
+            font-size: 24px;
+            color: #000000;
+        }
+
+form {
+font-size: 20px;
+}
+
+form input{
+text-align: center;
+}
+
+input {
+width: 261px;
+margin: 5px;
+padding: 5px;
+box-shadow: 0px 0px 2.5px 0px grey;
+transition: all 0.5s;
+}
+
+input:hover {
+background-color: #fff59e;
+}
+
+textarea:hover {
+transition: all 0.5s;
+background-color: #fff59e;
+}
+
+select:hover {
+background-color: #fff59e;
+}
+
+select {
+width: 261px;
+margin: 5px;
+padding: 5px;
+box-shadow: 0px 0px 2.5px 0px grey;
+background-color: white;
+transition: all 0.5s;
+}
+
+input[type=button].omg:hover {
+background-color: yellow;
+}
+
+.g7section {
+  display: none; 
+}
+
+.column {
+float: left;
+  width: 33.33%;
+}
+
+</style>
+</head>
+<body style="background-image: linear-gradient(white, #ffef00, orange);">
+
+<center>
+<div class="hello">
+<img src="logo2.png" width="80px">
+<h1 style="padding-bottom:5px;"> 👉SURVEY👈 </h1>
+<hr><br>
+
+<form>
+<p><b> FULL NAME </p></b>
+<input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+<input type="text" id="firstname" name="firstname" required placeholder="First Name">
+<input type="text" id="middleinitial" name="middleinitial" required placeholder=" Middle Initial"> <br> <br>
+
+<div class="column">
+<p><b> GRADE LEVEL </p></b>
+<select id="grade" name="grade">
+<option name="grade7" onclick="ok()">Grade 7</option>
+<option name="grade8">Grade 8</option>
+<option name="grade9">Grade 9</option>
+<option name="grade10">Grade 10</option>
+<option name="grade11">Grade 11</option>
+<option name="grade12">Grade 12</option>
+</select>
+</div>
+
+<div class="column">
+<p><b> NAME OF SECTION </p></b>
+<input type="text" id="section" name="section" required placeholder="Section"> 
+</div>
+
+<div class="column">
+<p><b> ACADEMIC RATING </p></b>
+<input type="number" id="acadexp" name="acadexp" required placeholder="Rating" min="0" max="10"> <br> <br> </div>
+
+<p><b> DO YOU HAVE SUPPORTIVE CLASSMATES? WHY OR WHY NOT? </p></b>
+<textarea id="supporrtivecm" name="supportivecm" required rows="5" cols="100"> </textarea> <br> <br>
+
+<p><b> WHAT MOTIVATES YOU TO LEARN MORE? </p></b>
+<textarea id="motivate" name="motivate" required rows="5" cols="100"> </textarea> <br> <br>
+
+<p><b> WHAT IS YOUR FAVORITE SUBJECT AND WHY? </p></b>
+<textarea id="favesub" name="favesub" required rows="5" cols="100"> </textarea> <br> <br>
+
+<p><b> DOES YOUR TEACHER ENCOURAGE YOU TO PERFORM BETTER? </p></b>
+<textarea id="teacherencourage" name="teacherencourage" required rows="5" cols="100"> </textarea> <br> <br>
+
+<p><b> WHAT DO YOU LIKE MOST ABOUT THE SCIENCE HIGH SCHOOL? </p></b>
+<textarea id="scihirate" name="scihirate" required rows="5" cols="100"> </textarea> <br> <br>
+
+<p><b> WHAT WILL YOU MISS NOW THAT THIS IS THE LAST QUARTER <br> AND YOU ARE GOING UP A GRADE NEXT SCHOOL YEAR? <textarea id="whatwillumiss" name="whatwillumiss" required rows="5" cols="100"> </textarea> </p></b><br>
+
+<input type="submit" value="Submit" id="submit" onclick="submit(this)">
+<input type="reset" onclick="RESET()"> <br> <br> <hr>
+<b style="line-height:50px;">Edison Rae M. Ramos | 8 - Pearl | All Rights Reserved 2023-2024</b>
+
+</div>
+</div>
+</div>
+
+<script>
+
+function submit() {
+var lastname=document.getElementById("lastname").value;
+var firstname=document.getElementById("firstname").value;
+var middleinitial=document.getElementById("middleinitial").value;
+var section=document.getElementById("section").value;
+var grade=document.getElementById("grade").value;
+var acadexp=document.getElementById("acadexp").value;
+var supportivecm=document.getElementById("supportivecm").value;
+var motivate=document.getElementById("motivate").value;
+var favesub=document.getElementById("favesub").value;
+var teacherencourage=document.getElementById("teacherencourage").value;
+var scihirate=document.getElementById("scihirate").value;
+var whatwillumiss=document.getElementById("whatwillumiss").value;
+
+var lastname=localStorage.setItem("lastname", lastname);
+var firstname=localStorage.setItem("firstname", firstname);
+var middleinitial=localStorage.setItem("middleinitial", middleinitial);
+var section=localStorage.setItem("section", section);
+var grade=localStorage.setItem("grade", grade);
+var acadexp=localStorage.setItem("acadexp", acadexp);
+var supportivecm=localStorage.setItem("supportivecm", supportivecm);
+var motivate=localStorage.setItem("motivate", motivate);
+var favesub=localStorage.setItem("favesub", favesub);
+var teacherencourage=localStorage.setItem("teacherencourage", teacherencourage);
+var scihirate=localStorage.setItem("scihirate", scihirate);
+var whatwillumiss=localStorage.setItem("whatwillumiss", whatwillumiss);
+
+
+alert('Submitted successfully!🙄💅✨');
+}
+
+function RESET() {
+alert('Successfully reset!🍰💌🧸');
+}
+
+</script>
+</center>
+<br><br><br><br><br>
+</body>
+</html>
+ 

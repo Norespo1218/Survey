@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Scilinian Survey</title>
+<link rel="icon" type="image/x-icon" href="logo.png">
+<link rel="stylesheet" type="text/css" href="SURVEY.css">
+</head>
+<body style="background-image: linear-gradient(white, #ffef00, orange);">
+	<a href="nav.html" class="back-button">BACK</a>
+<br>
+<marquee scrollamount="10"> <h3>| Edison Rae M. Ramos | 8 - Pearl | All Rights Reserved 2023-2024 | ICT II | Sir Jeric C. Calleja | </h3> </marquee>
+<center>
+<div class="hello">
+<button class="butones" onclick="music(this)"> <img src="logo2.png" width="80px"> </button>
+<h1> 👉SURVEY👈 </h1>
+<hr><br>
+
+<form>
+<p><b> FULL NAME </p></b>
+<input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+<input type="text" id="firstname" name="firstname" required placeholder="First Name">
+<input type="text" id="middleinitial" name="middleinitial" required placeholder=" Middle Initial"> <br> <br>
+
+<div class="column">
+<p><b> GRADE LEVEL </p></b>
+<select id="grade" name="grade">
+<option name="grade7" onclick="ok()">Grade 7</option>
+<option name="grade8">Grade 8</option>
+<option name="grade9">Grade 9</option>
+<option name="grade10">Grade 10</option>
+<option name="grade11">Grade 11</option>
+<option name="grade12">Grade 12</option>
+</select>
+</div>
+
+<div class="column">
+<p><b> NAME OF SECTION </p></b>
+<input type="text" id="section" name="section" required placeholder="Section"> 
+</div>
+
+<div class="column">
+<p><b> ACADEMIC RATING </p></b>
+<input type="number" id="acadexp" name="acadexp" required placeholder="Rating" min="0" max="10"> <br> <br> </div>
+
+<p><b> DO YOU HAVE SUPPORTIVE CLASSMATES? WHY OR WHY NOT? </p></b>
+<textarea id="supporrtivecm" name="supportivecm" required rows="5" cols="100" maxlength="100"> </textarea> <br> <br>
+
+<p><b> WHAT MOTIVATES YOU TO LEARN MORE? </p></b>
+<textarea id="motivate" name="motivate" required rows="5" cols="100" maxlength="100"> </textarea> <br> <br>
+
+<p><b> WHAT IS YOUR FAVORITE SUBJECT AND WHY? </p></b>
+<textarea id="favesub" name="favesub" required rows="5" cols="100" maxlength="100"> </textarea> <br> <br>
+
+<p><b> DOES YOUR TEACHER ENCOURAGE YOU TO PERFORM BETTER? </p></b>
+<textarea id="teacherencourage" name="teacherencourage" required rows="5" cols="100" maxlength="100"> </textarea> <br> <br>
+
+<p><b> WHAT DO YOU LIKE MOST ABOUT THE SCIENCE HIGH SCHOOL? </p></b>
+<textarea id="scihirate" name="scihirate" required rows="5" cols="100" maxlength="100"> </textarea> <br> <br>
+
+<p><b> WHAT WILL YOU MISS NOW THAT THIS IS THE LAST QUARTER <br> AND YOU ARE GOING UP A GRADE NEXT SCHOOL YEAR? <textarea id="whatwillumiss" name="whatwillumiss" required rows="5" cols="100" maxlength="100"> </textarea> </p></b><br>
+
+<input type="submit" value="Submit" id="submit" onclick="script()">
+<input type="reset" onclick="RESET()"> <br> <br> <hr>
+
+</div>
+</div>
+</div>
+<script src="SURVEY.js"></script>
+<br><br><br>
+<marquee scrollamount="10"> <h3> | PS. There is background music when you click the logo of the Science High School. |</h3> </marquee>
+<br> <br>
+</center>
+</body>
+</html>

@@ -1,0 +1,173 @@
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}@import url('https://fonts.cdnfonts.com/css/poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            font- family: 'Poppins', sans-serif;
+        }
+
+        .hello {
+            background: white;
+            width: 100%;
+            max-width: 900px;
+            margin: 50px auto 0;
+            border-radius: 30px;
+            padding: 30px;
+box-shadow: 0px 0px 15px 0px grey;
+        }
+
+        .hello #p {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .loe {
+            padding: 20px 0;
+        }
+
+        .loe p {
+            font-size: 24px;
+            color: #000000;
+        }
+
+form {
+font-size: 20px;
+}
+
+form input{
+text-align: center;
+}
+
+input {
+width: 261px;
+margin: 5px;
+padding: 5px;
+box-shadow: 0px 0px 2.5px 0px grey;
+transition: all 0.5s;
+}
+
+input:hover {
+background-color: #fff59e;
+}
+
+textarea:hover {
+transition: all 0.5s;
+background-color: #fff59e;
+}
+
+select:hover {
+background-color: #fff59e;
+}
+
+select {
+width: 261px;
+margin: 5px;
+padding: 5px;
+box-shadow: 0px 0px 2.5px 0px grey;
+background-color: white;
+transition: all 0.5s;
+}
+
+input[type=button].omg:hover {
+background-color: yellow;
+}
+
+.g7section {
+  display: none; 
+}
+
+.column {
+float: left;
+  width: 33.33%;
+}
+
+.butones {
+cursor: pointer;
+border: none;
+background-color: transparent;
+height: 100px;
+width: 200px;
+}
+
+i {
+font-size: 10px;
+}
+
+.hellostart {
+            background: white;
+            width: 100%;
+            max-width: 650px;
+            margin: 175px auto 0;
+            border-radius: 30px;
+            padding: 30px;
+box-shadow: 0px 0px 15px 0px grey;
+transform: scale(1);
+animation: pulse 0.5s infinite;
+line-height: -5px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+button.holayes {
+width: 261px;
+margin: 5px;
+padding: 5px;
+height: 50px;
+box-shadow: 0px 0px 2.5px 0px grey;
+background-color: white;
+transition: all 0.5s;
+margin-top: 5px;
+text-decoration: none;
+}
+
+button.holayes:hover {
+background-color: #D1FFBD;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+}
